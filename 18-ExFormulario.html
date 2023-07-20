@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExFormulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form method="post" name="form-cadastro" action="link-do-dev">
+
+        <label for="nome-funcionario">Nome do Funcionário*</label><br>
+        <input required name="nome-funcionario" id="nome-funcionario" type="text" minlength="3" maxlength="250"><br><br>
+
+        <label for="Empresa">Empresa</label><br>
+        <input required name="Empresa" name="Empresa" type="text" minlength="3" maxlength="250"><br><br>
+        
+        <label for="email_corp">E-mail Corporativo</label><br>
+        <input type="email" name="email_corp" id="email_corp" required><br><br>
+
+        <label for="CelCorp">Celular Corporativo</label><br>
+        <input type="tel" id="CelCorp" name="Celular-Corporativo"><br><br><br>
+
+        <label for="dependentes">Dependentes</label><br>
+        <select id="dependentes">
+            <optgroup>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </optgroup>
+        </select><br><br><br>
+
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" id="feminino" name="sexo" value="feminino"><label for="feminino">Feminino</label>
+        <input type="radio" id="masculino" name="sexo"><label for="masculino" value="masculino">Masculino</label> 
+        <input type="radio" id="outros" name="sexo"><label for="outros" value="outros">Outros</label><br><br><br>
+
+        <label for="observacoes">Observações</label><br>
+        <textarea id="observacoes"></textarea><br><br><br>
+
+        <input type="checkbox" id="Termos" name="Termos" value="sim" checked> <label for="Termos">Li e aceito os termos de serviço</label><br><br>
+
+        <input type="submit" value="Enviar Mensagem">
+    </form>
+</body>
+</html>

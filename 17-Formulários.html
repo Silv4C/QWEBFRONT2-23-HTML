@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campos de Formulário</title>
+
+</head>
+
+<body>
+    <h1>Campos de Formulário</h1>
+
+    <form method="post" name="form-cadastro" action="">
+        <label for="nome-usuario">Nome*</label><br>
+        <input required name="nome-usuario" id="nome-usuario" type="text" minLength="3" maxlength="8"><br>
+
+        <label for="sobrenome-usuario">Sobrenome</label><br>
+        <input name="sobrenome-usuario" id="sobrenome-usuario" type="text"><br>
+
+        <label for="senha">Senha*</label><br>
+        <input required name="senha" id="senha" type="password"><br>
+
+
+        <label>E-mail</label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="dt-nascimento">Data de Nascimento</label><br>
+        <input type="date" min="2022-01-01" max="2023-12-31" name="dt-nascimento" id="dt-nascimento" required><br>
+
+        <label for="idade">Idade</label><br>
+        <input type="number" min="0" max="18" id="idade" name="Idade"><br>
+
+        <label for="celular">Zip Zop</label><br>
+        <input type="tel" id="celular" name="telefone"><br>
+
+        <label for="documentos">Enviar documentação</label><br>
+        <input type="file" id="documentos" name="documentos" accept=".jpg, .png" required><br>
+
+        <label for="mensagem">Informe sua mensagem</label><br>
+        <textarea id="mensagem"></textarea><br>
+
+        <label for="Estado">Estado</label><br>
+        <select id="Estado"><br>
+            <optgroup>
+                <option disabled>Região Sudeste</option>
+                <option>SP</option>
+                <option>RJ</option>
+                <option>MG</option>
+                <option>SE</option>
+                <option>PA</option>
+                <option>SC</option>
+            </optgroup>
+
+            <optgroup>
+                <option disabled>Região Sul</option>
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+
+            </optgroup>
+
+            <optgroup>
+                <option disabled>Região Norte</option>
+                <option value="AC">AC</option>
+                <option value="AM">AM</option>
+                <option value="PA">PA</option>
+            </optgroup>
+
+            <optgroup>
+                <option disabled>Região Nordeste</option>
+                <option value="CE">CE</option>
+                <option value="BA">BA</option>
+                <option value="SE">SE</option>
+            </optgroup>
+        </select>
+        
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Possui dependentes?</legend><br>
+            <input type="radio" id="sim" name="dependentes" value="sim"><label for="Sim">Sim</label><br>
+            <input type="radio" id="nao" name="dependentes" value="nao"><label>Não</label><br>
+         </fieldset>
+         
+         <br>
+         
+         <input type="checkbox" id="newsletter" name="newsletter" value="sim" checked> <label for="newsletter">Aceito receber e-mails com promoções e novidades</label><br>
+
+         <br>
+         
+        <input type="submit" value="cadastrar">
+        <input type="reset" value="Limpar Tudo">
+    </form>
+</body>
+
+</html>
